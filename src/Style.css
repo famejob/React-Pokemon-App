@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.name-app{
+    text-align: center;
+    color:#ef930a;
+    font-weight: bold;
+    margin-top: 2rem;
+}
+.container{
+    margin:0 auto;
+    width: 90%;
+    padding-top: 100px;
+    display: flex;
+}
+.left-content,.right-content{
+    flex-basis: 50%;
+}
+.left-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 2rem;
+}
+.right-content{
+    text-align: center;
+    color: black;
+    position: fixed;
+    top:20rem;
+    right: 30rem;
+}
+.right-content img{
+    margin: 1.5rem;
+    height: 160px;
+}
+.right-content h1{
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.card{
+    width: 300px;
+    background-color:#a9f6d2;
+    border-radius: 1rem;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.5);
+    padding: 0 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.abilities{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+.abilities .group{
+    background-color: #0aefae;
+    color: #000;
+    padding: 0.5rem;
+    font-size: 12px;
+    border-radius: 8px;
+    margin-left: 1rem;
+}
+.base-stat{
+    margin-top: 2rem;
+}
+.btn-group{
+    margin-top: 2rem;
+    display: flex;
+}
+.btn{
+    outline: none;
+    border: none;
+    width: 150px;
+    padding: 0.3rem 0;
+    margin: 1rem;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 8px;
+}
+.btn-prev{
+    background-color: #1ceee1;
+}
+.btn-next{
+    background-color: #1eee1e;
+}
+
+@media only screen and (max-width:500px){
+    .container{
+        margin:0 auto;
+        width: 100%;
+        padding-top: 10px;
+        display: flex;
+    }
+    .left-content{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 2rem;
+    }
+    .right-content{
+        text-align: center;
+        color: black;
+        position: fixed;
+        top:100px;
+        right: 2px;
+    }
+    .card{
+        width: 150px;
+        background-color:#a9f6d2;
+        border-radius: 1rem;
+        box-shadow: 0 5px 5px rgba(0,0,0,0.5);
+        padding: 0 0.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        box-sizing: border-box;
+    }
+    .btn-group{
+        display: flex;
+        flex-direction: column;
+    }
+}
